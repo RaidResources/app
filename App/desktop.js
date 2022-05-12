@@ -1,26 +1,9 @@
 function loadImages(){
-  succession = loadImage("https://www.bungie.net/common/destiny2_content/icons/f189251cfb9815df1f3f6063867d0957.jpg");
-  trustee = loadImage("https://www.bungie.net/common/destiny2_content/icons/3c02f8982f3f444a84a961572669213b.jpg");
-  legacysOathCloak  = loadImage("https://www.bungie.net/common/destiny2_content/icons/c1422e3664478a35b960bdb801001260.jpg");
-  legacysOathStrides = loadImage("https://www.bungie.net/common/destiny2_content/icons/f1fdb2cbbbebc0bdcc38c7b02c1f9b36.jpg");
-  legacysOathGrips = loadImage("https://www.bungie.net/common/destiny2_content/icons/f4bac3f5c3a735dd0788539600fb6c04.jpg");
-  legacysOathBond = loadImage("https://www.bungie.net/common/destiny2_content/icons/7cc19cbefc988499b0faac30ea1fd192.jpg");
-  legacysOathBoots = loadImage("https://www.bungie.net/common/destiny2_content/icons/434ddd1074f935e0a975ec8929efd8be.jpg");
-  legacysOathGloves = loadImage("https://www.bungie.net/common/destiny2_content/icons/a7092ad81df38b5dd568d4176cee3001.jpg");
-  legacysOathMark = loadImage("https://www.bungie.net/common/destiny2_content/icons/142e7b6946a3b29386931d5c613a5b9d.jpg");
-  legacysOathGreaves = loadImage("https://www.bungie.net/common/destiny2_content/icons/c02578408e785b7e48dd4bc8486b346f.jpg");
-  legacysOathGauntlets = loadImage("https://www.bungie.net/common/destiny2_content/icons/55947464ab5dc1974beec1c77d27ba56.jpg");
   
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  loadImages();
-  bgimg = loadImage("Images/squared2.png");
-  headerFontBold = loadFont("Fonts/NeueHaasDisplayBold.ttf");
-  headerFont = loadFont("Fonts/NeueHaasDisplayRoman.ttf");
-  bodyFont = loadFont("Fonts/AGaramondPro-Regular.otf");
-  accentFont = loadFont("Fonts/Cromwell HPLHS.ttf");
   grid = width/10;
   ShadowOffset = grid/10;
   ScrollFactor = 0;

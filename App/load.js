@@ -3,6 +3,14 @@ function setup() {
 	background(0,0,0,0);
 	loadAppFont();
 	loadImages();
+  	grid = width/10;
+  	ShadowOffset = grid/10;
+  	ScrollFactor = 0;
+  	selectedClass = "Hunter";
+  	selectedRaid = "dsc";
+  	selectedMode = "lootTable"
+  	menuOpen = false;
+ 	MaxScrollDistance = -1;
 	const script = document.createElement('script');
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) script.src = 'App/mobile.js';
 	else script.src = 'App/desktop.js';
