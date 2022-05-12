@@ -15,7 +15,8 @@ function setup() {
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) script.src = 'App/mobile.js';
 	else script.src = 'App/desktop.js';
 	document.body.appendChild(script);
-	remove();
+	const element = document.getElementById("loader");
+	element.remove();
 }
 
 function loadImages(){
