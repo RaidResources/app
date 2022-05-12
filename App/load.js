@@ -1,7 +1,7 @@
 function setup() {
 	createCanvas(windowWidth, windowHeight);
 	background(0,0,0,0);
-	loadFont();
+	loadAppFont();
 	loadImages();
 	const script = document.createElement('script');
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) script.src = 'App/mobile.js';
@@ -73,7 +73,7 @@ function loadImages(){
   
 }
 
-function loadFont(){
+function loadAppFont(){
 	textAlign(CENTER,CENTER);
   	noStroke();
   	textSize(25);
