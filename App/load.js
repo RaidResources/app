@@ -6,15 +6,16 @@ function setup() {
 	const script = document.createElement('script');
 	if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) script.src = 'App/mobile.js';
 	else script.src = 'App/desktop.js';
-	//document.body.appendChild(script);
-	//remove();
+	document.body.appendChild(script);
+	remove();
 }
 
 function loadImages(){
+
 	textAlign(CENTER,CENTER);
 	background(255,255,255);
 	text("Loading Images : squared2.png",width/2,height/2);
-	bgimg = loadImage("Images/squared2.png");
+	bgimg = loadImage("https://raidresources.github.io/app/App/Images/squared2.png");
 
 	background(255,255,255);
 	console.log("Loading Images : f189251cfb9815df1f3f6063867d0957.jpg");
@@ -74,6 +75,7 @@ function loadImages(){
 }
 
 function loadAppFont(){
+
 	textAlign(CENTER,CENTER);
   	noStroke();
   	textSize(25);
@@ -81,20 +83,20 @@ function loadAppFont(){
   	background(255,255,255);
   	console.log("Loading Fonts : NeueHaasDisplayBold.ttf");
 	text("Loading Fonts : NeueHaasDisplayBold.ttf",width/2,height/2);
-	headerFontBold = loadFont("Fonts/NeueHaasDisplayBold.ttf");
+	headerFontBold = loadFont("https://raidresources.github.io/app/App/Fonts/NeueHaasDisplayBold.ttf");
 
 	background(255,255,255);
 	console.log("Loading Fonts : NeueHaasDisplayRoman.ttf");
 	text("Loading Fonts : NeueHaasDisplayRoman.ttf",width/2,height/2);
-	headerFont = loadFont("Fonts/NeueHaasDisplayRoman.ttf");
+	headerFont = loadFont("https://raidresources.github.io/app/App/Fonts/NeueHaasDisplayRoman.ttf");
 
 	background(255,255,255);
 	console.log("Loading Fonts : AGaramondPro-Regular.otf");
 	text("Loading Fonts : AGaramondPro-Regular.otf",width/2,height/2);
-	bodyFont = loadFont("Fonts/AGaramondPro-Regular.otf");
+	bodyFont = loadFont("https://raidresources.github.io/app/App/Fonts/AGaramondPro-Regular.otf");
 
 	background(255,255,255);
 	console.log("Loading Fonts : Cromwell HPLHS.ttf");
 	text("Loading Fonts : Cromwell HPLHS.ttf",width/2,height/2);
-	accentFont = loadFont("Fonts/Cromwell HPLHS.ttf");
+	accentFont = loadFont("https://raidresources.github.io/app/App/Fonts/Cromwell HPLHS.ttf");
 }
