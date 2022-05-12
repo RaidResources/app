@@ -1,19 +1,3 @@
-function loadImages(){
-  
-}
-
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  grid = width/10;
-  ShadowOffset = grid/10;
-  ScrollFactor = 0;
-  selectedClass = "Hunter";
-  selectedRaid = "dsc";
-  selectedMode = "lootTable"
-  menuOpen = false;
-  MaxScrollDistance = -1;
-}
-
 function draw() {
   grid = width/10;
   ShadowOffset = grid/10;
